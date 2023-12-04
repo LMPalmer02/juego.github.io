@@ -1,0 +1,50 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url('https://i.pinimg.com/736x/69/61/d6/6961d6ede58f83dc1ef06922ca85a430.jpg');
+    background-size: cover;
+    background-position: center;
+} /*Disposición del cuerpo de la página y foto del fondo*/
+
+header {
+    text-align: center;
+    margin-top: 10px;
+    padding: 5px 0;
+} /*Título*/
+
+footer {
+    text-align: center;
+    margin-top: 10px;
+    padding: 5px 0;
+    background-color: white;
+} /*Pie de página*/
+
+#game-container {
+    display: grid;
+    grid-template-columns: repeat(10, 40px);
+    grid-template-rows: repeat(10, 40px);
+    gap: 2px;
+} /*Cantidad y tamaño de celdas de la cuadricula*/
+
+.cell {
+    width: 40px;
+    height: 40px;
+    border: 1px solid black;
+    background-color: lightblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+} /*Color y tamaño de celdas*/
+
+.ship {
+    background-color: green;
+} /*Color de los barcos*/
+
+.ship-hit {
+    background-color: red;
+    /* Color para barcos golpeados */
+  }
